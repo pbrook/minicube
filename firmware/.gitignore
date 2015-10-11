@@ -1,0 +1,7 @@
+minicube.elf
+minicube.bin
+minicube.hex
+minicube.map
+minicube.lst
+*.o
+*.d

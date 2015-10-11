@@ -1,0 +1,3 @@
+[submodule "firmware/mbed"]
+	path = firmware/mbed
+	url = git@github.com:mbedmicro/mbed
