@@ -145,20 +145,6 @@ set_pixel(int x, int y, int z, int color)
     write_framebuffer[fboffset] = color & 0xff;
 }
 
-static void
-draw_frame(void)
-{
-    static int offset;
-    int val;
-    memset(framebuffer, 0, sizeof(framebuffer));
-    val = (offset == 0) ? 0x1000 : 0x10;
-    set_pixel(offset, offset, offset, val);
-    offset++;
-    framebuffer[0] = 0x10;
-    if (offset == 8)
-        offset = 0;
-}
-    
 int main() {
     int frames = 0;
     if (!mybutton)
